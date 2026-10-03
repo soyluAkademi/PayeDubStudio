@@ -1,0 +1,23 @@
+# Whisper'in yanlis duydugu kelimeler ve terim duzeltmeleri.
+# Bir satir = yanlis=dogru   (buyuk/kucuk harf farketmez)
+# Yeni video isledikce buraya ekle; bir daha elle duzeltmene gerek kalmaz.
+unitihab=Unity Hub
+uniti hab=Unity Hub
+unitide=Unity'de
+uniti=Unity
+unity hab=Unity Hub
+webbullet=WebGL
+web bullet=WebGL
+sportut=Supported
+get setup=Get Started
+uzun muadeli=uzun vadeli
+vizyel kod=Visual Studio Code
+visual code=Visual Studio Code
+cloud code=Claude Code
+cloud'u=Claude'u
+cloud'un=Claude'un
+cloud'um=Claude'um
+cloud=Claude
+personel isas=personal license
+kurbudu=Install
+template=Templates

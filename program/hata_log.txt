@@ -1,0 +1,23 @@
+
+===== 2026-09-15 08:19:29 =====
+Traceback (most recent call last):
+  File "C:\Users\ssoylu\Desktop\Seslendirme\_Sablon\program\seslendirme_app.py", line 462, in <module>
+    main()
+    ~~~~^^
+  File "C:\Users\ssoylu\Desktop\Seslendirme\_Sablon\program\seslendirme_app.py", line 457, in main
+    App(root)
+    ~~~^^^^^^
+  File "C:\Users\ssoylu\Desktop\Seslendirme\_Sablon\program\seslendirme_app.py", line 158, in __init__
+    self._altbilgi()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Users\ssoylu\Desktop\Seslendirme\_Sablon\program\seslendirme_app.py", line 315, in _altbilgi
+    c = tk.Frame(self.root, bg=BG, padx=20, pady=(0, 10)); c.pack(fill="x")
+  File "C:\Users\ssoylu\AppData\Local\Python\pythoncore-3.14-64\Lib\tkinter\__init__.py", line 3368, in __init__
+    Widget.__init__(self, master, 'frame', cnf, {}, extra)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ssoylu\AppData\Local\Python\pythoncore-3.14-64\Lib\tkinter\__init__.py", line 2805, in __init__
+    self.tk.call(
+    ~~~~~~~~~~~~^
+        (widgetName, self._w) + extra + self._options(cnf))
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: bad screen distance "0 10"

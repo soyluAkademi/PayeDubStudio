@@ -1,0 +1,47 @@
+PAYE GAMES DUB STUDIO  v2.0  (web arayuzu)
+==========================================
+
+Baslatmak icin ust klasordeki  Seslendirme.vbs  dosyasina cift tikla.
+Python yerel bir sunucu baslatir ve tarayicida arayuz acilir
+(http://127.0.0.1:8765). Internet gerekmez, disariya hicbir sey gitmez.
+
+Kapatmak icin: arayuzun altindaki "Programi kapat" baglantisi.
+(Sadece sekmeyi kapatirsan sunucu arka planda calismaya devam eder;
+ sorun degil, bir daha actiginda ayni sunucuya baglanir.)
+
+KLASOR YAPISI
+-------------
+Seslendirme.vbs          tek giris noktasi
+program\
+   sunucu.py                yerel sunucu (arayuzu servis eder, adimlari calistirir)
+   arayuz.html              arayuz
+   transkript_yap.py        1. adim
+   ceviri_yap.py            2. adim
+   altyazi_uret.py          3. adim
+   senkron_yap.py           4. adim   (ORTAM_TONU ayari burada)
+   sozluk.txt               whisper duzeltmeleri, tum videolar icin ortak
+   Tanila.bat               sorun cikarsa: paket kontrolu + konsolla baslatma
+   ayarlar.json             son kullanilan klasor (otomatik olusur)
+   eski_arayuz\
+      seslendirme_app.py    onceki tkinter arayuzu (yedek)
+
+ESKI ARAYUZE DONMEK
+-------------------
+Seslendirme.vbs icindeki  program\sunucu.py  yazan yeri
+program\eski_arayuz\seslendirme_app.py  yap. Is mantigi ayni dosyalari
+kullandigi icin ciktiler birebir ayni olur.
+
+KULLANIM
+--------
+Her video icin ayri klasor ac, mp4'u icine koy.
+Arayuzde klasoru sec, 1'den 4'e sirayla tikla.
+
+Aralarda senin yapacaklarin:
+  2. adimdan sonra  ->  <video>_EN_metin.txt dosyasini oku, gerekirse duzelt
+                        (satir sayisini DEGISTIRME)
+  3. adimdan sonra  ->  metni seslendir, klasore englishVoice.mp3 olarak koy
+                        (her satiri ayri ayri, arasinda kisa duraklarla okut)
+
+Camtasia: senkron sesin basini videonun 0:00'ina hizala, TR sesi kis,
+TIME SCALING YAPMA.
+Udemy: video + <video>_EN.vtt + <video>_TR.vtt
